@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - Controle de Comandas</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #0f172a; color: white; margin: 0; padding: 20px; }
+        header { display: flex; justify-content: space-between; align-items: center; background-color: #1e293b; padding: 15px 30px; border-radius: 12px; margin-bottom: 20px; }
+        h1 { color: #34d399; margin: 0; font-size: 24px; }
+        .voltar { color: #94a3b8; text-decoration: none; font-size: 14px; }
+        .voltar:hover { color: white; }
+        .grid-mesas { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .mesa { background-color: #1e293b; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #334155; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .mesa h3 { margin-top: 0; color: #f8fafc; }
+        .status { display: inline-block; padding: 5px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 15px; }
+        .livre { background-color: #065f46; color: #34d399; }
+        .ocupada { background-color: #7f1d1d; color: #fca5a5; }
+        button { width: 100%; padding: 8px; background-color: #34d399; color: #0f172a; border: none; font-weight: bold; border-radius: 6px; cursor: pointer; }
+        button:hover { background-color: #059669; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Painel de Comandas</h1>
+        <a href="index.html" class="voltar">Sair / Voltar ao Login</a>
+    </header>
+
+    <div class="grid-mesas">
+        <div class="mesa">
+            <h3>Mesa 01</h3>
+            <span class="status livre">Livre</span>
+            <button onclick="alert('Abrindo comanda para a Mesa 01')">Abrir Comanda</button>
+        </div>
+        
+        <div class="mesa">
+            <h3>Mesa 02</h3>
+            <span class="status ocupada">Ocupada</span>
+            <button onclick="alert('Visualizando pedidos da Mesa 02')">Ver Pedidos</button>
+        </div>
+
+        <div class="mesa">
+            <h3>Mesa 03</h3>
+            <span class="status livre">Livre</span>
+            <button onclick="alert('Abrindo comanda para a Mesa 03')">Abrir Comanda</button>
+        </div>
+
+        <div class="mesa">
+            <h3>Mesa 04</h3>
+            <span class="status ocupada">Ocupada</span>
+            <button onclick="alert('Visualizando pedidos da Mesa 04')">Ver Pedidos</button>
+        </div>
+    </div>
+
+</body>
+</html>
