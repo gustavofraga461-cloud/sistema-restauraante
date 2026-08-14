@@ -23,7 +23,7 @@
             <label>Senha</label>
             <input type="password" placeholder="••••••••" required>
             
-            <button type="submit" onclick="alert('Botão funcionando! Bem-vindo ao sistema.')">Entrar</button>
+            <button type="button" onclick="window.location.href='comndas.html'">Entrar</button>
         </form>
     </div>
 </body>
